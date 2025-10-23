@@ -11,7 +11,6 @@ and display the pixel buffer; all geometry and rendering are done manually on th
 
 <img width="698" height="389" alt="1" src="https://github.com/user-attachments/assets/d85e628b-091a-4b87-8811-c93725b9806d" />
 
-
 ---
 
 ## 🎯 Educational Focus
@@ -22,10 +21,12 @@ illustrating how an entire interactive world can be built from first principles:
 - How pixels become **geometry** through rasterization.  
 - How geometry becomes **motion** through mathematical transformations.  
 - How procedural generation and simple AI create **emergent behavior**.  
-- How all of it integrates into a coherent **rendering pipeline** with no engine, shaders, or GPU acceleration.
+- How all of it integrates into a coherent **rendering pipeline** with no engine, shaders, or GPU acceleration.  
+- How **deltaTime** and frame-step **stabilization** ensure consistent motion and simulation speed across variable framerates.
 
-This project aims to bridge the gap between **algorithmic geometry** and **visual computing**,  
+This project bridges the gap between **algorithmic geometry** and **visual computing**,  
 demonstrating the inner workings of a software renderer through readable, modular C code.
+
 <img width="694" height="394" alt="2" src="https://github.com/user-attachments/assets/c9644117-b218-4035-9fe9-ceb99fad21f9" />
 
 ---
@@ -111,13 +112,11 @@ Convexor performs **all rasterization on the CPU**, pixel by pixel —
 there are **no GPU shaders**, **no multithreading**, and **no hardware acceleration**.  
 
 Performance scales linearly with resolution:  
-it runs smoothly at **800×600**, but higher resolutions will cause **noticeable slowdowns**,  
-especially when many **AI mobs** or complex geometric shapes are active on screen.  
+it runs smoothly at **800×600**, but higher resolutions will cause **noticeable slowdowns** since there is no parallelisation.  
 
 This is **intentional** — the project is designed as an **educational example** of  
 how a **software rasterizer** works internally.  
-Each frame directly reveals the **computational cost** of geometry and rendering operations  
-before any optimization, threading, or GPU offloading is applied.
+Each frame directly reveals the **computational cost** of rendering operations.
 
 
 ## 🧾 Research and Supporting Documentation
