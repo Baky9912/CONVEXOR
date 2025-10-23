@@ -1,6 +1,6 @@
 # 🌀 Convexor
 
-2024 Computer Graphics at [RAF](https://raf.edu.rs/)
+2024 Computer Graphics project at [RAF](https://raf.edu.rs/)
 
 **Convexor** is a minimalistic 2D graphics engine and game written in **C**, built entirely around a single core operation —  
 **drawing one pixel at coordinate `(x, y)` with color `(r, g, b)`**.  
