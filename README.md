@@ -26,7 +26,6 @@ illustrating how an entire interactive world can be built from first principles:
 
 This project aims to bridge the gap between **algorithmic geometry** and **visual computing**,  
 demonstrating the inner workings of a software renderer through readable, modular C code.
-<img width="698" height="389" alt="1" src="https://github.com/user-attachments/assets/de89ba11-9244-4ba0-a123-38297c39d92b" />
 <img width="694" height="394" alt="2" src="https://github.com/user-attachments/assets/c9644117-b218-4035-9fe9-ceb99fad21f9" />
 
 ---
